@@ -5,10 +5,12 @@ function startTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
+    let ms = today.getMilliseconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
-    setTimeout(startTime, 1000);
+    ms = checkTime(ms);
+    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s + "." + ms;
+    setTimeout(startTime, 1);
 }
 
 function checkTime(i) {
