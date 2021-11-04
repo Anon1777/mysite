@@ -12,7 +12,7 @@
     <div class="container">
         <div class="top">
             <div id="date">Date</div>
-            <h1>Your Best [[EVERYBODY'S FAVORITE]] Personal Desktop</h1>
+            <h1 id="title">Your Best [[EVERYBODY'S FAVORITE]] Personal Desktop</h1>
             <div id="clock"></div>
         </div>
         <div class="main">
@@ -27,10 +27,6 @@
     var dd = today.getDate();
     var mm = today.getMonth();
     var yyyy = today.getFullYear();
-    var hh = today.getHours();
-    var mm = today.getMinutes();
-    var ss = today.getSeconds();
-    var mms = today.getMilliseconds();
 
     if(dd < 10) dd="0" + dd;
     if(mm < 10) mm="0" + mm;

@@ -6,10 +6,11 @@ function startTime() {
     let m = today.getMinutes();
     let s = today.getSeconds();
     let ms = today.getMilliseconds();
+    let d = today.getDay();
     m = checkTime(m);
     s = checkTime(s);
     ms = checkTime(ms);
-    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s + "." + ms;
+    document.getElementById('clock').innerHTML = d + ":" + h + ":" + m + ":" + s + "." + ms;
     setTimeout(startTime, 1);
 }
 

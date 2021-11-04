@@ -59,7 +59,7 @@ button:hover{
     font-size: 20px;
     border: 2px solid beige;
     padding: 5px;
-    width: 120px;
+    width: 150px;
     border-radius: 5px;
 
 }
@@ -101,7 +101,9 @@ h1{
     border-radius: 10px;
 }
 
-
+#title{
+    font-size: 30px;
+}
 
 
 
